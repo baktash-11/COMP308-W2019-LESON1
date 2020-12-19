@@ -1,11 +1,11 @@
-
+"use strict";
 //self-executing anonymous fucntion 
 //IIFE -- Immediately Invoked Function Expression
 (function(){
     let myFunctionalVariable=0;
     
     function Start(){
-        let myLocalVariable
+        let myLocalVariable=1;
         console.log(`App Started...!${myFunctionalVariable}`);
     }
     
@@ -15,6 +15,7 @@
 })();
 
 /*
+private notes
 window.addEventListener("load", function(){
         let myLocalVariable=0;
         console.log(`App Started ... ${myFunctionalVariable}`);
