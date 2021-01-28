@@ -1,14 +1,17 @@
 "use strict";
+
+const { get } = require("jquery");
+
 //self-executing anonymous fucntion 
 //IIFE -- Immediately Invoked Function Expression
 (function(){
     let myFunctionalVariable=0;
     
     function Start(){
-        let myLocalVariable=1;
-        console.log(`App Started...!${myFunctionalVariable}`);
+        
+        console.log(`%cApp Started...!${myFunctionalVariable}`, 
+        "font-size:25px; color:yellow; font-w");
     }
-    
 
     window.addEventListener("load", Start)
    
